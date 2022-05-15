@@ -1,4 +1,4 @@
-import express, { Response, Request, Application } from "express";
+import express, { Application } from "express";
 import MongoDB from "./config/database/mongodb.config";
 import v1 from "./api/v1/routes";
 
