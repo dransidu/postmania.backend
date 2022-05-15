@@ -1,5 +1,5 @@
 import express, { Application } from "express";
-import MongoDB from "./config/database/mongodb.config";
+import MongoDB from "./config/database/MongoDB.config";
 import v1 from "./api/v1/routes";
 
 const app: Application = express();
