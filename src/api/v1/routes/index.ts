@@ -1,4 +1,4 @@
-import express, { Response, Request, Application, Router } from "express";
+import express, { Response, Request, Router } from "express";
 const router: Router = express.Router();
 
 router.route('/').get((req: Request, res: Response) => {
