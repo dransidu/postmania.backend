@@ -1,7 +1,11 @@
 import express, { Response, Request, Application } from "express";
+import MongoDB from "./config/database/mongodb.config";
 import v1 from "./api/v1/routes";
 
 const app: Application = express();
+
+// Get database connection
+MongoDB.getConnect();
 
 // Port
 const PORT: number = 5000;
