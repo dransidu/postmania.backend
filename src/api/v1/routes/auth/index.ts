@@ -1,7 +1,7 @@
 import express, { Response, Request, Router } from "express";
 const router: Router = express.Router();
-import auth from "./auth/"
+import admin from "./admin"
 
-router.use("/auth", auth)
+router.use("/admin", admin)
 
 export default router;
