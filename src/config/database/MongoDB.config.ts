@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const URI: string = "mongodb://localhost:27017/test";
+const URI: string = "mongodb://localhost:27017/postmania";
 
 class MongoDB {
     static getConnect() {

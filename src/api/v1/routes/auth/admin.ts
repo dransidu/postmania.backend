@@ -1,12 +1,15 @@
 import express, { Response, Request, Router } from "express";
+import { login, register } from "../../controllers/auth/adminController";
 const router: Router = express.Router();
 
 router.route('/login')
-    .get((req: Request, res: Response) => {
-        res.send("Hello world");
-    })
     .post((req: Request, res: Response) => {
-        res.json({ msg: "Login request get" })
+        login(req, res);
+    })
+
+router.route('/register')
+    .post((req: Request, res: Response) => {
+        register(req, res);
     })
 
 export default router;

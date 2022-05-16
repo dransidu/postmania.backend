@@ -10,6 +10,8 @@ MongoDB.getConnect();
 // Port
 const PORT: number = 5000;
 
+app.use(express.json())
+
 // Routes config
 app.use("/api/v1", v1)
 
